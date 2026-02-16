@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diagnostics-framework"
+version = "0.1.0"
+description = "A pluggable diagnostics framework for running system-specific tests, plots, and reports."
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.30",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+]
+
+[project.scripts]
+diagnostics = "diagnostics_framework.app:main"
